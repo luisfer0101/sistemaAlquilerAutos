@@ -16,5 +16,22 @@ namespace sistemaAlquilerAutos
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAuto_Click(object sender, EventArgs e)
+        {
+            FormDatosAutos formAutos = new FormDatosAutos();
+            formAutos.ShowDialog();
+        }
+
+        private void buttonAlquiler_Click(object sender, EventArgs e)
+        {
+            FormAlquiler formAlquiler = new FormAlquiler();
+            formAlquiler.ShowDialog();
+        }
     }
 }
