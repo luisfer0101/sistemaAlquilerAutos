@@ -34,13 +34,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxNitAlquiler = new System.Windows.Forms.TextBox();
-            this.textBoxPlacaAlquiler = new System.Windows.Forms.TextBox();
-            this.textBoxFechaAlquiler = new System.Windows.Forms.TextBox();
+            this.textBoxNit = new System.Windows.Forms.TextBox();
+            this.textBoxPlaca = new System.Windows.Forms.TextBox();
             this.textBoxKmRecorrido = new System.Windows.Forms.TextBox();
-            this.textBoxFechaDevolucion = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonGuardar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelMayorKm = new System.Windows.Forms.Label();
+            this.dateTimePickerAlquiler = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDevolucion = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,26 +99,19 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "NIT (CLIENTE ALQUILER):";
             // 
-            // textBoxNitAlquiler
+            // textBoxNit
             // 
-            this.textBoxNitAlquiler.Location = new System.Drawing.Point(255, 110);
-            this.textBoxNitAlquiler.Name = "textBoxNitAlquiler";
-            this.textBoxNitAlquiler.Size = new System.Drawing.Size(424, 22);
-            this.textBoxNitAlquiler.TabIndex = 9;
+            this.textBoxNit.Location = new System.Drawing.Point(255, 110);
+            this.textBoxNit.Name = "textBoxNit";
+            this.textBoxNit.Size = new System.Drawing.Size(424, 22);
+            this.textBoxNit.TabIndex = 9;
             // 
-            // textBoxPlacaAlquiler
+            // textBoxPlaca
             // 
-            this.textBoxPlacaAlquiler.Location = new System.Drawing.Point(255, 165);
-            this.textBoxPlacaAlquiler.Name = "textBoxPlacaAlquiler";
-            this.textBoxPlacaAlquiler.Size = new System.Drawing.Size(424, 22);
-            this.textBoxPlacaAlquiler.TabIndex = 10;
-            // 
-            // textBoxFechaAlquiler
-            // 
-            this.textBoxFechaAlquiler.Location = new System.Drawing.Point(255, 226);
-            this.textBoxFechaAlquiler.Name = "textBoxFechaAlquiler";
-            this.textBoxFechaAlquiler.Size = new System.Drawing.Size(424, 22);
-            this.textBoxFechaAlquiler.TabIndex = 11;
+            this.textBoxPlaca.Location = new System.Drawing.Point(255, 165);
+            this.textBoxPlaca.Name = "textBoxPlaca";
+            this.textBoxPlaca.Size = new System.Drawing.Size(424, 22);
+            this.textBoxPlaca.TabIndex = 10;
             // 
             // textBoxKmRecorrido
             // 
@@ -124,13 +119,6 @@
             this.textBoxKmRecorrido.Name = "textBoxKmRecorrido";
             this.textBoxKmRecorrido.Size = new System.Drawing.Size(424, 22);
             this.textBoxKmRecorrido.TabIndex = 12;
-            // 
-            // textBoxFechaDevolucion
-            // 
-            this.textBoxFechaDevolucion.Location = new System.Drawing.Point(255, 283);
-            this.textBoxFechaDevolucion.Name = "textBoxFechaDevolucion";
-            this.textBoxFechaDevolucion.Size = new System.Drawing.Size(424, 22);
-            this.textBoxFechaDevolucion.TabIndex = 13;
             // 
             // dataGridView1
             // 
@@ -153,18 +141,51 @@
             this.buttonGuardar.UseVisualStyleBackColor = true;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(47, 376);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(181, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "ALQUILER CON MAYOR KM:";
+            // 
+            // labelMayorKm
+            // 
+            this.labelMayorKm.AutoSize = true;
+            this.labelMayorKm.Location = new System.Drawing.Point(252, 376);
+            this.labelMayorKm.Name = "labelMayorKm";
+            this.labelMayorKm.Size = new System.Drawing.Size(0, 16);
+            this.labelMayorKm.TabIndex = 17;
+            // 
+            // dateTimePickerAlquiler
+            // 
+            this.dateTimePickerAlquiler.Location = new System.Drawing.Point(255, 223);
+            this.dateTimePickerAlquiler.Name = "dateTimePickerAlquiler";
+            this.dateTimePickerAlquiler.Size = new System.Drawing.Size(298, 22);
+            this.dateTimePickerAlquiler.TabIndex = 18;
+            // 
+            // dateTimePickerDevolucion
+            // 
+            this.dateTimePickerDevolucion.Location = new System.Drawing.Point(255, 280);
+            this.dateTimePickerDevolucion.Name = "dateTimePickerDevolucion";
+            this.dateTimePickerDevolucion.Size = new System.Drawing.Size(298, 22);
+            this.dateTimePickerDevolucion.TabIndex = 19;
+            // 
             // FormAlquiler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 450);
+            this.ClientSize = new System.Drawing.Size(1176, 513);
+            this.Controls.Add(this.dateTimePickerDevolucion);
+            this.Controls.Add(this.dateTimePickerAlquiler);
+            this.Controls.Add(this.labelMayorKm);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBoxFechaDevolucion);
             this.Controls.Add(this.textBoxKmRecorrido);
-            this.Controls.Add(this.textBoxFechaAlquiler);
-            this.Controls.Add(this.textBoxPlacaAlquiler);
-            this.Controls.Add(this.textBoxNitAlquiler);
+            this.Controls.Add(this.textBoxPlaca);
+            this.Controls.Add(this.textBoxNit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -186,12 +207,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxNitAlquiler;
-        private System.Windows.Forms.TextBox textBoxPlacaAlquiler;
-        private System.Windows.Forms.TextBox textBoxFechaAlquiler;
+        private System.Windows.Forms.TextBox textBoxNit;
+        private System.Windows.Forms.TextBox textBoxPlaca;
         private System.Windows.Forms.TextBox textBoxKmRecorrido;
-        private System.Windows.Forms.TextBox textBoxFechaDevolucion;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonGuardar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelMayorKm;
+        private System.Windows.Forms.DateTimePicker dateTimePickerAlquiler;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDevolucion;
     }
 }
